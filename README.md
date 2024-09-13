@@ -4,6 +4,10 @@
 
 The Common Flag Scoring System (CFSS) is a framework designed to give a score to a given flag from a Capture The Flag (CTF) challenge. The name is derived from the [Common Vulnerability Scoring System](https://en.wikipedia.org/wiki/Common_Vulnerability_Scoring_System) (CVSS), widely used in the computer security industry to score software vulnerabilities.
 
+## CFSS Calculator Website
+
+Head to [https://res260.github.io/cfss/CFSS.html](https://res260.github.io/cfss/CFSS.html) for a simple page to quickly parse and calculate CFSS scores.
+
 ## Goal
 
 The goal of CFSS is to reduce subjectivity from challenge designers when determining the score a flag should have by providing clear guidelines and criteria. The CFSS score can also be shared with participants to justify how the scoring of the flag was determined, which increases transparency and reinforce competitive integrity of CTF competitions.
