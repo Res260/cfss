@@ -9,9 +9,11 @@
     <body style="background-color: #FFEECC">
         <div id="app">
             <h1 style="text-align: center">🚩 Common Flag Scoring System (CFSS) {{ CFSS_VERSION }} Calculator</h1>
-            <div>
-                <label for="cfssInput"><strong>CFSS Score: </strong></label>
-                <input @input="onChangeCFSSValue" v-model="cfssInput" autofocus type="text" id="cfssInput" />
+            <div style="margin-bottom: 1em;width: 100%;display: flex;flex-direction: row;justify-content: flex-start;gap: 0.5em;">
+                <label for="cfssInput" style="display: flex;flex-direction: column;justify-content: center;"><strong>CFSS Score: </strong></label>
+                <div style="flex-grow: 1;display: flex;flex-direction: column;justify-content: center;">
+                    <input @input="onChangeCFSSValue" v-model="cfssInput" autofocus type="text" id="cfssInput" />
+                </div>
             </div>
             <div class="criterion left">
                 <div>
@@ -66,7 +68,6 @@
                     </div>
                 </div>
             </div>
-            <br><br>
             <h2>The flag should have a score between <span style="color: red">{{ scoreRange[0] }}</span> and <span style="color: red">{{ scoreRange[1] }}</span></h2>
             <div id="range">
                 <input type="text" id="scoreRange" />
@@ -209,6 +210,11 @@
                 align-items: center;
                 max-width: 42em;
                 margin: auto;
+                background-color: #FFF9EE;
+                padding-bottom: 1em;
+                padding-left: 0.5em;
+                padding-right: 0.5em;
+                border-radius: 0.3em;
             }
 
             .criterion {
@@ -227,9 +233,7 @@
 
             #cfssInput {
                 padding: 0.5em;
-                margin-bottom:1em;
                 min-width: 10em;
-                width: 30em
             }
 
             .inputs {
@@ -245,8 +249,15 @@
                 display: none;
             }
 
+            .rs-container {
+                margin: auto;
+            }
+
             #range {
-                width: 95vw;
+                width: 98vw;
+                background-color: #FFF9EE;
+                padding: 1em 0em;
+                border-radius: 0.3em;
             }
 
           </style>
