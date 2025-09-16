@@ -161,8 +161,7 @@
                     this.cfssInput = this.getCFSSStringValue()
 
                     // Update score range slider
-                    scoreRangeSlider.destroy()
-                    scoreRangeSlider = getScoreSlider(this.scoreRange[0], this.scoreRange[1])
+                    scoreRangeSlider.setValues(this.scoreRange[0], this.scoreRange[1])
                 },
 
                 getScoreRange() {
